@@ -1,120 +1,88 @@
 <!doctype html>
 <html lang="en">
 
-<!--
-SA: I Nathan Liristis, 400469577 certify that this material is my original work.
-No other person's work has been used without due acknowledgement.
-I have also not made my work available to anyone else.
--->
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nathan Liristis Lab3</title>
-    <link rel ="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Liristis | Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-
-<form action="https://4it3.sept.mcmaster.ca/liristn/Lab3/Lab3.php" method="post">
-
-    <header>
-        <h1 class="page-title">ACME Corporation - Lab Analysis</h1>
-    </header>
-    <fieldset>
-        <legend>Step 1: Identification</legend>
-
-        <div class="row">
-            <label for = "employeeID"> Employee ID:</label>
-            <input type="text" id="employeeID" name = "employeeID" value="9577"> * <br>
-        </div>
-
-        <div class="row">
-            <label for = "employeeName"> Employee Name:</label>
-            <input type="text" id = "employeeName" name = "employeeName" value="Nathan Liristis"> * <br>
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <legend>Step 2: Metal Analysis Selection</legend>
-
-        <div class="two-col">
-            <div class = "left-col">
-                <div class="row">
-                    <input type="radio" id = "normal" name = "metalAnalysisSelection" value = "Normal">
-                    <label for = "normal">Normal</label>
-                    <input type="radio" id = "duplicate" name = "metalAnalysisSelection" value = "Duplicate">
-                    <label for = "normal">Duplicate</label>
-                    <input type="radio" id = "extraSample" name = "metalAnalysisSelection" value = "ExtraSample">
-                    <label for = "normal">Extra Sample</label>
-                    <input type="radio" id = "emergency" name = "metalAnalysisSelection" value = "Emergency">
-                    <label for = "normal">Emergency</label> <br>
-                </div>
-
-                <div class="row">
-                    <label for = "sampleBottleID"> Sample Bottle ID:</label>
-                    <input type="text" id="sampleBottleID" name = "sampleBottleID"> * <br>
-                </div>
-
-                <div class="row">
-                    <label for = "sampleDate"> Sample Date:</label>
-                    <input type="date" id="sampleDate" name = "sampleDate"> * <br>
-                </div>
-
-                <div class="row">
-                    <label for = "sampleTime"> Sample Time:</label>
-                    <input type = "time" id="sampleTime" name = "sampleTIme"> * <br>
-                </div>
+<body class="resume-page">
+    <main class="resume">
+        <div class="header-row">
+            <div class="profile-frame">
+                <img class="profile-pic" src="FACESHOT.JPG" alt="Profile photo">
             </div>
-
-            <div class="right-col">
-                <fieldset class = "nested">
-                    <legend>Analysis Required</legend>
-                    <input type="checkbox" id = "iron" name = "analysisType" value="FE - Iron">
-                    <label for = "iron">Fe - Iron</label>
-                    <input type="checkbox" id = "magnessium" name = "analysisType" value="<Mg - Magnessium">
-                    <label for = "magnessium">Mg - Magnessium</label>
-                    <input type="checkbox" id = "cadmium" name = "analysisType" value = "Cd - Cadmium">
-                    <label for = "cadmium">Cd - Cadmium</label>
-                    <input type="checkbox" id = "mercury" name = "analysisType" value= "Hg - Mercury">
-                    <label for = "mercury">Hg - Mercury</label>
-                </fieldset>
+            <div class="name-row">
+                <h1><em>Nathan Liristis</em></h1>
+                <a class="page-button" href="portfolio.html">Project Portfolio</a>
             </div>
         </div>
-    </fieldset>
 
-    <fieldset>
-        <legend>Step 3: Other Information & Submission</legend>
+        <section>
+            <h2>Professional Biography</h2>
+            <p>
+                A young well-disciplined prospective engineer with a strong background in engineering principles, analytical
+                problem solving, and attention to detail. I have a proven ability to research, develop and iterate upon innovative
+                solutions and collaborate with multiple teams. I am a dedicated, adaptable, and quick learner who strives to
+                deliver the best results possible. Thank you for taking the time to review my application.
+            </p>
+        </section>
 
-        <div class="row">
-            <label for = "reason"> Sample Time:</label>
-            <select name = "reason" id = "reason">
-                <option value = "internalSampling" >Internal Sampling</option>
-                <option value = "governmentInspection" >Government Inspection</option>
-                <option value = "qaqc" > QA/QC</option>
-            </select> <br>
-        </div>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>High School:</strong> Garth Webb Secondary School, Oakville Ontario</li>
+                <li><strong>University:</strong> McMaster University - Industrial Automation Systems Engineering Technology</li>
+            </ul>
+        </section>
 
-        <div class = "row">
-            <label for = "comments">Comments:</label>
-            <textarea name = "comments" id = "comments" placeholder="Enter Text Here"></textarea>
-        </div>
+        <section>
+            <h2>Work</h2>
 
-    </fieldset>
+            <article>
+                <p><strong><em>Mechanical Design & Assembly CO-OP </em></strong> - <a href="https://www.zarpac.com/">Zarpac</a></p>
+                <ul>
+                    <li>Design Machine Components</li>
+                    <li>Assemble & Install Subassemblies</li>
+                    <li>Validate & Test Machine Functionality & Schematics</li>
+                </ul>
+            </article>
 
-    <footer>
-        <p class="bottom-note">* indicates a required field</p>
+            <article>
+                <p><strong><em>ROS CO-OP</em></strong> - <a href="https://www.taigarobotics.com/">Taiga Robotics</a></p>
+                <ul>
+                    <li>Learn Python</li>
+                    <li>Learn ROS</li>
+                    <li>Develop Simple TurtleSIM using ROS</li>
+                </ul>
+            </article>
 
-        <div class="buttons">
-            <input type = "submit" value = "Submit">
-            <input type= "reset" value = "Reset Form Data to Defaults">
-        </div>
-        <a href = "">ACME Corp</a> 801 Industrial Drive Whitehorse, YK Y1A 3M1
-        <a href= "">liristn@mcmaster.ca</a>
-    </footer>
-</form>
+        </section>
 
+        <section>
+            <h2>Hobbies</h2>
+            <ol>
+                <li>
+                    <strong>Hobbies - Fitness</strong><br>
+                    Fitness and the gym have become a large part of my life and a consistent outlet that I enjoy doing.
+                </li>
+                <li>
+                    <strong>Interests - Robotics</strong><br>
+                    I love hearing learning about new applications and products in the Robotics industry
+                </li>
+                <li>
+                    <strong>School Clubs - McMaster Formula Electric</strong><br>
+                    Builds a small scale Formula E car to compete against other schools.
+                </li>
+            </ol>
+        </section>
+
+        <footer>
+            <p>&copy; Nathan Liristis</p>
+        </footer>
+    </main>
 </body>
+
 </html>
